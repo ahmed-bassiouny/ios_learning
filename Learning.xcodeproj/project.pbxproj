@@ -14,6 +14,7 @@
 		6933596821D9039F009FBE90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6933596621D9039F009FBE90 /* LaunchScreen.storyboard */; };
 		6956F8CB21DCB13700BE98C9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6956F8CA21DCB13700BE98C9 /* HomeViewController.swift */; };
 		6956F8CD21DCB19000BE98C9 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6956F8CC21DCB19000BE98C9 /* NotificationViewController.swift */; };
+		69EADC6F21DE505D00681FCF /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EADC6E21DE505D00681FCF /* PickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6933596921D9039F009FBE90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6956F8CA21DCB13700BE98C9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6956F8CC21DCB19000BE98C9 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		69EADC6E21DE505D00681FCF /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				6933596921D9039F009FBE90 /* Info.plist */,
 				6956F8CA21DCB13700BE98C9 /* HomeViewController.swift */,
 				6956F8CC21DCB19000BE98C9 /* NotificationViewController.swift */,
+				69EADC6E21DE505D00681FCF /* PickerViewController.swift */,
 			);
 			path = Learning;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69EADC6F21DE505D00681FCF /* PickerViewController.swift in Sources */,
 				6933596021D90398009FBE90 /* ImagePickerViewController.swift in Sources */,
 				6933595E21D90398009FBE90 /* AppDelegate.swift in Sources */,
 				6956F8CD21DCB19000BE98C9 /* NotificationViewController.swift in Sources */,

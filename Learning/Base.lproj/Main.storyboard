@@ -48,10 +48,19 @@
                                     <segue destination="CIT-Vt-nHm" kind="show" id="H7n-t8-M45"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79l-Qx-T3W">
+                                <rect key="frame" x="166" y="170" width="43" height="30"/>
+                                <state key="normal" title="Picker"/>
+                                <connections>
+                                    <segue destination="6He-RA-7Lb" kind="show" id="4QS-82-iAM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Cky-n1-ixb" firstAttribute="top" secondItem="cZI-bG-mhN" secondAttribute="bottom" constant="17" id="0eA-mG-TEI"/>
+                            <constraint firstItem="79l-Qx-T3W" firstAttribute="top" secondItem="Cky-n1-ixb" secondAttribute="bottom" constant="21" id="3Yt-Nd-5yK"/>
+                            <constraint firstItem="79l-Qx-T3W" firstAttribute="centerX" secondItem="Uhb-9n-OaN" secondAttribute="centerX" id="7jD-df-iqO"/>
                             <constraint firstItem="Cky-n1-ixb" firstAttribute="centerX" secondItem="Uhb-9n-OaN" secondAttribute="centerX" id="DNg-Hc-cJS"/>
                             <constraint firstItem="cZI-bG-mhN" firstAttribute="centerX" secondItem="Uhb-9n-OaN" secondAttribute="centerX" id="DPx-5B-dEr"/>
                             <constraint firstItem="cZI-bG-mhN" firstAttribute="top" secondItem="eIl-Ub-oEt" secondAttribute="top" constant="8" id="pVq-yr-fLI"/>
@@ -91,6 +100,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WIR-re-iAN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-514" y="768"/>
+        </scene>
+        <!--Picker View Controller-->
+        <scene sceneID="pU3-Ob-7db">
+            <objects>
+                <viewController id="6He-RA-7Lb" customClass="PickerViewController" customModule="Learning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PP7-vC-Qui">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="date timer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SPd-tP-qZm">
+                                <rect key="frame" x="87.5" y="318.5" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Y4R-i2-F43"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Vf-Df-aPy">
+                                <rect key="frame" x="87.5" y="414" width="200" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Vf-Df-aPy" firstAttribute="trailing" secondItem="SPd-tP-qZm" secondAttribute="trailing" id="5fS-dU-SPG"/>
+                            <constraint firstItem="SPd-tP-qZm" firstAttribute="centerY" secondItem="PP7-vC-Qui" secondAttribute="centerY" id="IlJ-ny-6bG"/>
+                            <constraint firstItem="SPd-tP-qZm" firstAttribute="centerX" secondItem="PP7-vC-Qui" secondAttribute="centerX" id="VRx-WY-EEd"/>
+                            <constraint firstItem="2Vf-Df-aPy" firstAttribute="top" secondItem="SPd-tP-qZm" secondAttribute="bottom" constant="65.5" id="bnO-mh-RpQ"/>
+                            <constraint firstItem="2Vf-Df-aPy" firstAttribute="leading" secondItem="SPd-tP-qZm" secondAttribute="leading" id="dDc-DP-Mfg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8tO-m1-dLn"/>
+                    </view>
+                    <connections>
+                        <outlet property="dateTextField" destination="SPd-tP-qZm" id="G0h-bh-oKi"/>
+                        <outlet property="pickerTextField" destination="2Vf-Df-aPy" id="mYl-qT-vsR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6DX-De-t2o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="284" y="767.76611694152928"/>
         </scene>
         <!--Image Picker View Controller-->
         <scene sceneID="tne-QT-ifu">
