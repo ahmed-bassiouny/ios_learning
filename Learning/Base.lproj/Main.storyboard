@@ -34,36 +34,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZI-bG-mhN">
-                                <rect key="frame" x="143" y="72" width="89" height="30"/>
-                                <state key="normal" title="Select Image"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="SmA-7u-uJQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cky-n1-ixb">
-                                <rect key="frame" x="148" y="119" width="79" height="30"/>
-                                <state key="normal" title="Notification"/>
-                                <connections>
-                                    <segue destination="CIT-Vt-nHm" kind="show" id="H7n-t8-M45"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79l-Qx-T3W">
-                                <rect key="frame" x="166" y="170" width="43" height="30"/>
-                                <state key="normal" title="Picker"/>
-                                <connections>
-                                    <segue destination="6He-RA-7Lb" kind="show" id="4QS-82-iAM"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="m40-E7-VVH">
+                                <rect key="frame" x="16" y="80" width="343" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZI-bG-mhN">
+                                        <rect key="frame" x="127" y="0.0" width="89" height="30"/>
+                                        <state key="normal" title="Select Image"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="SmA-7u-uJQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cky-n1-ixb">
+                                        <rect key="frame" x="132" y="35" width="79" height="30"/>
+                                        <state key="normal" title="Notification"/>
+                                        <connections>
+                                            <segue destination="CIT-Vt-nHm" kind="show" id="H7n-t8-M45"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79l-Qx-T3W">
+                                        <rect key="frame" x="150" y="70" width="43" height="30"/>
+                                        <state key="normal" title="Picker"/>
+                                        <connections>
+                                            <segue destination="6He-RA-7Lb" kind="show" id="4QS-82-iAM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Cky-n1-ixb" firstAttribute="top" secondItem="cZI-bG-mhN" secondAttribute="bottom" constant="17" id="0eA-mG-TEI"/>
-                            <constraint firstItem="79l-Qx-T3W" firstAttribute="top" secondItem="Cky-n1-ixb" secondAttribute="bottom" constant="21" id="3Yt-Nd-5yK"/>
-                            <constraint firstItem="79l-Qx-T3W" firstAttribute="centerX" secondItem="Uhb-9n-OaN" secondAttribute="centerX" id="7jD-df-iqO"/>
-                            <constraint firstItem="Cky-n1-ixb" firstAttribute="centerX" secondItem="Uhb-9n-OaN" secondAttribute="centerX" id="DNg-Hc-cJS"/>
-                            <constraint firstItem="cZI-bG-mhN" firstAttribute="centerX" secondItem="Uhb-9n-OaN" secondAttribute="centerX" id="DPx-5B-dEr"/>
-                            <constraint firstItem="cZI-bG-mhN" firstAttribute="top" secondItem="eIl-Ub-oEt" secondAttribute="top" constant="8" id="pVq-yr-fLI"/>
+                            <constraint firstItem="m40-E7-VVH" firstAttribute="leading" secondItem="eIl-Ub-oEt" secondAttribute="leading" constant="16" id="Cyu-Fb-Xk8"/>
+                            <constraint firstItem="eIl-Ub-oEt" firstAttribute="trailing" secondItem="m40-E7-VVH" secondAttribute="trailing" constant="16" id="fV0-FC-1cx"/>
+                            <constraint firstItem="m40-E7-VVH" firstAttribute="top" secondItem="eIl-Ub-oEt" secondAttribute="top" constant="16" id="hdk-Lc-Y0J"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eIl-Ub-oEt"/>
                     </view>
